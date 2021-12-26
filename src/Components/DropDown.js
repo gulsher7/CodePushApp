@@ -45,7 +45,7 @@ const DropDown = ({
                                 onPress={() => onSelectedItem(val)}
                                 style={{
                                     ...styles.selectedItemStyle,
-                                    backgroundColor: value.id == val.id ? 'pink' : 'white',
+                                    backgroundColor: value?.id == val.id ? 'pink' : 'white',
                                 }}
                             >
                                 <Text>{val.name}</Text>
