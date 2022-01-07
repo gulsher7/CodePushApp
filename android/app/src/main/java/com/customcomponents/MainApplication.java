@@ -1,6 +1,6 @@
 package com.customcomponents;
-
 import android.app.Application;
+import com.microsoft.codepush.react.CodePush;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -19,7 +19,10 @@ public class MainApplication extends Application implements ReactApplication {
         public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
         }
-
+       @Override
+        protected String getJSBundleFile() {
+            return CodePush.getJSBundleFile();
+        }
         @Override
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
