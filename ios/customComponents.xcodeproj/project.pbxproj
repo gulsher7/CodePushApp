@@ -14,6 +14,7 @@
 		5BAAFA79B1779DBE28771C2D /* libPods-customComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDF9DFB3DEA334F192C294A /* libPods-customComponents.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		881D288579B77EE2B9B9CD45 /* libPods-customComponents-customComponentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C211A584265929C753EEC5FE /* libPods-customComponents-customComponentsTests.a */; };
+		FEDCB3142792E6AF00EA300F /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEDCB3132792E6AF00EA300F /* AppCenter-Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C211A584265929C753EEC5FE /* libPods-customComponents-customComponentsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-customComponents-customComponentsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB51B549F37412CC9EC6976D /* Pods-customComponents-customComponentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customComponents-customComponentsTests.release.xcconfig"; path = "Target Support Files/Pods-customComponents-customComponentsTests/Pods-customComponents-customComponentsTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FEDCB3132792E6AF00EA300F /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "customComponents/AppCenter-Config.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		13B07FAE1A68108700A75B9A /* customComponents */ = {
 			isa = PBXGroup;
 			children = (
+				FEDCB3132792E6AF00EA300F /* AppCenter-Config.plist */,
 				9D3D36C62774EF8800424D92 /* customComponentsRelease.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -246,6 +249,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				FEDCB3142792E6AF00EA300F /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

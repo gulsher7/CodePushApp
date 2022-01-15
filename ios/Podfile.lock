@@ -1,4 +1,22 @@
 PODS:
+  - appcenter-analytics (4.3.0):
+    - AppCenter/Analytics (~> 4.0)
+    - AppCenterReactNativeShared (~> 4.0)
+    - React-Core
+  - appcenter-core (4.3.0):
+    - AppCenterReactNativeShared (~> 4.0)
+    - React-Core
+  - appcenter-crashes (4.3.0):
+    - AppCenter/Crashes (~> 4.0)
+    - AppCenterReactNativeShared (~> 4.0)
+    - React-Core
+  - AppCenter/Analytics (4.3.0):
+    - AppCenter/Core
+  - AppCenter/Core (4.3.0)
+  - AppCenter/Crashes (4.3.0):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (4.3.0):
+    - AppCenter/Core (= 4.3.0)
   - Base64 (1.1.2)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
@@ -358,6 +376,9 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - appcenter-analytics (from `../node_modules/appcenter-analytics/ios`)
+  - appcenter-core (from `../node_modules/appcenter/ios`)
+  - appcenter-crashes (from `../node_modules/appcenter-crashes/ios`)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -418,6 +439,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AppCenter
+    - AppCenterReactNativeShared
     - Base64
     - CocoaAsyncSocket
     - Flipper
@@ -437,6 +460,12 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  appcenter-analytics:
+    :path: "../node_modules/appcenter-analytics/ios"
+  appcenter-core:
+    :path: "../node_modules/appcenter/ios"
+  appcenter-crashes:
+    :path: "../node_modules/appcenter-crashes/ios"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
   CodePush:
@@ -507,6 +536,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AppCenter: 883369ab78427b0561c688158d689dfe1f993ea9
+  appcenter-analytics: 2a8a55d2feba193c3c8a51b9902ef4757386414e
+  appcenter-core: 0293b8aeee457a25b44323a311de49c29d9defa7
+  appcenter-crashes: ad135405e148a9ed1c8bd169a9d2ea7bbaecd34c
+  AppCenterReactNativeShared: a821c7287a296486889ef6339317b701febb0695
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
